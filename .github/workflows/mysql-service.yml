@@ -1,6 +1,10 @@
 name: tbls
 
-on: [push]
+on:
+  workflow_dispatch:
+  schedule:
+    # UTC
+    - cron:  '0 22 * * sun-thu'
 
 jobs:
   test:
