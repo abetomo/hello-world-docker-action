@@ -6,7 +6,7 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-      - name: Setup MySQL
-        run: |
-          sudo systemctl start mysql.service
-          mysql -uroot -h127.0.0.1 -proot -e 'CREATE DATABASE IF NOT EXISTS test;'
+
+      - run: sudo systemctl start mysql.service
+      - run: mysql -uroot -h127.0.0.1 -proot -e 'CREATE DATABASE IF NOT EXISTS test;'
+      - run: mysql -uroot -h127.0.0.1 -proot test < ./test.sql
