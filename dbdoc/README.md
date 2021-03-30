@@ -4,7 +4,7 @@
 
 | Name | Columns | Comment | Type |
 | ---- | ------- | ------- | ---- |
-| [test_table](test_table.md) | 2 |  | BASE TABLE |
+| [test_table](test_table.md) | 3 |  | BASE TABLE |
 
 ## Relations
 

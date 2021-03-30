@@ -9,6 +9,7 @@
 CREATE TABLE `test_table` (
   `id` int NOT NULL,
   `name` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `notes` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci
 ```
@@ -21,6 +22,7 @@ CREATE TABLE `test_table` (
 | ---- | ---- | ------- | -------- | -------- | ------- | ------- |
 | id | int |  | false |  |  |  |
 | name | varchar(255) |  | true |  |  |  |
+| notes | varchar(255) |  | true |  |  |  |
 
 ## Constraints
 
