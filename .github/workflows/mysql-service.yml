@@ -15,3 +15,5 @@ jobs:
         run: curl -L https://git.io/dpkg-i-from-url | bash -s -- https://github.com/k1LoW/tbls/releases/download/v$TBLS_VERSION/tbls_$TBLS_VERSION-1_amd64.deb
         env:
           TBLS_VERSION: 1.49.7
+      - run: tbls doc mysql://root:root@127.0.0.1:3306/test
+      - run: ls
