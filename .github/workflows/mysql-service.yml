@@ -10,3 +10,8 @@ jobs:
       - run: sudo systemctl start mysql.service
       - run: mysql -uroot -h127.0.0.1 -proot -e 'CREATE DATABASE IF NOT EXISTS test;'
       - run: mysql -uroot -h127.0.0.1 -proot test < ./test.sql
+
+      - name: Install tbls
+        run: curl -L https://git.io/dpkg-i-from-url | bash -s -- https://github.com/k1LoW/tbls/releases/download/v$TBLS_VERSION/tbls_$TBLS_VERSION-1_amd64.deb
+        env:
+          TBLS_VERSION: 1.49.7
