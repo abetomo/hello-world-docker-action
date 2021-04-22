@@ -1,4 +1,9 @@
-on: [push]
+on:
+  push:
+    tags-ignore:
+      - "*"
+    branches:
+      - "*"
 
 jobs:
   hello_world_job:
